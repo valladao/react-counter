@@ -6,12 +6,16 @@ function App() {
 
   let count = 0
 
+  const incrementCount = increment => {
+    //TODO
+  }
+
   return (
     <div className="App">
-      <Button increment={1}/>
-      <Button increment={10}/>
-      <Button increment={100}/>
-      <Button increment={1000}/>
+      <Button increment={1} onClickFunction={incrementCount} />
+      <Button increment={10} onClickFunction={incrementCount} />
+      <Button increment={100} onClickFunction={incrementCount} />
+      <Button increment={1000} onClickFunction={incrementCount} />
       <span>{count}</span>
     </div>
   );
